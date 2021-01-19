@@ -7,13 +7,10 @@
 `Learning Center Home <http://learning.cyverse.org/>`_
 
 
-Section Name
--------------
+**Read mapping**
+------------------
 
-**Description:**
-
-..
-	#### Comment: short text description goes here ####
+In this step, we will align our reads to the A. thaliana (TAIR10) reference genome. We will be using HiSAT2-index-align app from the Discovery Environment (DE).
 
 ----
 
@@ -25,9 +22,12 @@ Section Name
     * - Input
       - Description
       - Example
-    * -
-      -
-      -
+    * - Leaf RNA-seq data
+      - 1M reads dataset from SRR7947123
+      - iplantcollaborative > example_data > HAMR_tutorial -> fastqfiles
+    * - Reference Genome
+      - A. thaliana TAIR 10 assembly
+      - iplantcollaborative > example_data > HAMR_tutorial -> reference_genome
 
 *Descriptive Steps*
 
@@ -49,17 +49,7 @@ Section Name
 
      Tell them if they are following with our sample data exactly
      what value to choose
-
-
-..
-	#### Comment: Suggested style guide:
-	1. Steps begin with a verb or preposition: Click on... OR Under the "Results Menu"
-	2. Locations of files listed parenthetically, separated by carets, ultimate object in bold
-	(Username > analyses > *output*)
-	3. Buttons and/or keywords in bold: Click on **Apps** OR select **Arabidopsis**
-	4. Primary menu titles in double quotes: Under "Input" choose...
-	5. Secondary menu titles or headers in single quotes: For the 'Select Input' option choose...
-	####
+     
 
 **Output/Results**
 

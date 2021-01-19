@@ -7,13 +7,9 @@
 `Learning Center Home <http://learning.cyverse.org/>`_
 
 
-Section Name
+Sample dataset and preprocessing
 -------------
-
-**Description:**
-
-..
-	#### Comment: short text description goes here ####
+In this tutorial, we are analyzing 1M reads from Arabidopsis thaliana leaf RNA-seq dataset (SRR7947123) from Zhao et al., 2018. Example data is available from CyVerse datastore.
 
 ----
 
@@ -25,42 +21,32 @@ Section Name
     * - Input
       - Description
       - Example
-    * -
-      -
-      -
+    * - Leaf RNA-seq data
+      - 1M reads dataset from SRR7947123
+      - iplantcollaborative > example_data > HAMR_tutorial -> fastqfiles
 
-*Descriptive Steps*
-
-
-.. 	#### Comment: Step title should be descriptive (i.e. Cleaning Read data) ###
+*Preprocessing*
 
 
-1. Replace the text below with your own
+*Evaluate the quality of your sequencing data using FastQC*
 
-2. Use the image src in this link to link to
+Preprocessing will assess the quality of the raw reads to identify possible sequencing errors or biases. FastQC can be used for an overview of the data quality.
 
-   - A DE App: |CyVerse_launch|
-   - An Atmosphere image: |CyVerse_launch|
+1. Login to the |discovery_enviornment|.
 
-3. Click :guilabel:`&Cancel` to continue is how you can show a button
+2. CLick on "Apps" tab in the Discovery Environment and search for "fastqc".
 
-4. Tell the user to choose an appropriate value for a setting
+3. Click on the app icon.
 
-   .. admonition:: sample-data
+|fastqc_app_icon|_
 
-     Tell them if they are following with our sample data exactly
-     what value to choose
+4. Change the name of the analysis and output folder as needed or leave for defaults.
 
+5. Under "Input" click on Add to provide input files for both ChIP and input dataset. Sample dataset location iplantcollaborative > example_data > HAMR_tutorial -> fastqfiles. Check both files and click 'OK'. 
 
-..
-	#### Comment: Suggested style guide:
-	1. Steps begin with a verb or preposition: Click on... OR Under the "Results Menu"
-	2. Locations of files listed parenthetically, separated by carets, ultimate object in bold
-	(Username > analyses > *output*)
-	3. Buttons and/or keywords in bold: Click on **Apps** OR select **Arabidopsis**
-	4. Primary menu titles in double quotes: Under "Input" choose...
-	5. Secondary menu titles or headers in single quotes: For the 'Select Input' option choose...
-	####
+6. For next section "Resource Requirements" request resources as needed or leave for defaults 
+
+7. Click **Launch Analysis**. You will receive a notification that the job has been submitted and running. Click on the Analyses tab to check the status of your job. When the analysis completes, click on the right three dots menu and click on 'Go to output folder' to access you output files.
 
 **Output/Results**
 
@@ -70,14 +56,16 @@ Section Name
     * - Output
       - Description
       - Example
-    * -
-      -
-      -
+    * - html and zip files
+      - FastqQC report
+      - SRR7947123_1M_fastqc.html
 
 
 ----
 
 **Description of output and results**
+
+Click on the html report files and check if your sequencing data has any red flags that you should be aware of. For more details on each module of the fastqc report, check |fastqc_doc| 
 
 
 ----
@@ -127,4 +115,30 @@ Section Name
 
 .. |Github Repo Link|  raw:: html
 
-   <a href="FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX" target="blank">Github Repo Link</a>
+   <a href="https://github.com/CyVerse-learning-materials/HAMR-tutorial" target="blank">Github Repo Link</a>
+
+.. |discovery_enviornment| raw:: html
+
+    <a href="https://de.cyverse.org/de/" target="_blank">Discovery Environment</a>
+
+.. |fastqc_app_icon| image:: ./img/fastqc.png
+    :width: 300
+    :height: 150
+.. _fastqc_app_icon: http://learning.cyverse.org/ <a href="https://de.cyverse.org/de/" target="_blank">fastqc_app_icon</a>
+
+.. |trim_app| raw:: html
+
+    <a href="https://de.cyverse.org/de/?type=apps&app-id=92578d70-54b0-11e9-ae6e-008cfa5ae621&system-id=de" target="_blank">Trimmomatic app</a>
+
+
+.. |fastqc_doc| raw:: html
+
+    <a href="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/" target="_blank">FastQC documentation</a>
+
+.. |fastqc_tutorial| raw:: html
+
+    <a href="https://cyverse-fastqc-quickstart.readthedocs-hosted.com/en/latest/" target="_blank">evaluate high-throughput sequencing reads with FastQC</a>
+    
+.. |trim_tutorial| raw:: html
+
+    <a href="https://cyverse-trimmomatic-quickstart.readthedocs-hosted.com/en/latest/" target="_blank">here</a>
