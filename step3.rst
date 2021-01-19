@@ -8,12 +8,9 @@
 
 
 Filter multi-mapping reads and add read groups
--------------
+-----------------------------------------------
 
-**Description:**
-
-..
-	#### Comment: short text description goes here ####
+HAMR requires that reads map unambiguously to a reference sequence, in order to avoid false-positive mismatches. Workflow-extractUniqueReads, retains uniquely mapping reads and converts to the sorted BAM format.
 
 ----
 
