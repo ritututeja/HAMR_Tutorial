@@ -8,12 +8,8 @@
 
 
 Resolve spliced alignments using GATK
--------------
-
-**Description:**
-
-..
-	#### Comment: short text description goes here ####
+--------------------------------------
+In this step, we will process BAM files from previous step to resolve splice alignments. GATK is strict about chromosome order, and thus we include preventative re-sorting steps using Picard-ReorderSAM app. 
 
 ----
 
@@ -25,41 +21,26 @@ Resolve spliced alignments using GATK
     * - Input
       - Description
       - Example
-    * -
-      -
-      -
+    * - BAM files
+      - BAM files with uniquely mapped reads
+      - iplantcollaborative > example_data > HAMR_tutorial -> unique_mapping_reads_assignRG -> output.RG.bam
 
-*Descriptive Steps*
+**RUN Picard-ReorderSAM**
 
-.. 	#### Comment: Step title should be descriptive (i.e. Cleaning Read data) ###
+1. Click on "Apps" tab in the Discovery Environment and search for "Picard-ReorderSAM".
 
+2. Under Input section, provide input BAM file (output from Picard-AddOrReplaceReadGroups). Provide Reference sequence, dictionary and index files from the tutorial example data (iplantcollaborative > example_data > HAMR_tutorial -> reference_genome). Reference dict for your genome can be generated using GATK-CreateSequenceDictionary app.
 
-1. Replace the text below with your own
+3. Provide an output file name or leave it to defaults and launch analysis.
 
-2. Use the image src in this link to link to
+**Splits reads that contain Ns in their cigar string using GATK-SplitNCigarReads**
 
-   - A DE App: |CyVerse_launch|
-   - An Atmosphere image: |CyVerse_launch|
+1. Search for "GATK-SplitNCigarReads v3.5" from the app tab. Click on the app icon.
 
-3. Click :guilabel:`&Cancel` to continue is how you can show a button
+2. Provide Reference sequence, dictionary and index files from the tutorial example data. Input reordered BAM and index file from the previous step. Example data for this step is provided at iplantcollaborative > example_data > HAMR_tutorial -> reordered_BAM_files.
 
-4. Tell the user to choose an appropriate value for a setting
+3. Provide an output file name or leave it to defaults and launch analysis.
 
-   .. admonition:: sample-data
-
-     Tell them if they are following with our sample data exactly
-     what value to choose
-
-
-..
-	#### Comment: Suggested style guide:
-	1. Steps begin with a verb or preposition: Click on... OR Under the "Results Menu"
-	2. Locations of files listed parenthetically, separated by carets, ultimate object in bold
-	(Username > analyses > *output*)
-	3. Buttons and/or keywords in bold: Click on **Apps** OR select **Arabidopsis**
-	4. Primary menu titles in double quotes: Under "Input" choose...
-	5. Secondary menu titles or headers in single quotes: For the 'Select Input' option choose...
-	####
 
 **Output/Results**
 
@@ -69,15 +50,9 @@ Resolve spliced alignments using GATK
     * - Output
       - Description
       - Example
-    * -
-      -
-      -
-
-
-----
-
-**Description of output and results**
-
+    * - BAM file
+      - BAM file with reads split at N CIGAR elements and CIGAR strings updated.
+      - iplantcollaborative > example_data > HAMR_tutorial -> resolved_splice_alignments
 
 ----
 

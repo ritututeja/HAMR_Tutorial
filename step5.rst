@@ -9,10 +9,7 @@
 Running HAMR
 -------------
 
-**Description:**
-
-..
-	#### Comment: short text description goes here ####
+With the sorted, indexed, filtered for uniquely mapped and resolved for spliced alignment reads, HAMR tabulates the total number of high-quality mismatches at each candidate genomic site. HAMR then excludes the possibility that the observed mismatches are not due to sequencing error, SNP or RNA editing.
 
 ----
 
@@ -24,41 +21,22 @@ Running HAMR
     * - Input
       - Description
       - Example
-    * -
-      -
-      -
+    * - BAM file
+      - BAM file with sorted, indexed, filtered for uniquely mapped and resolved for spliced alignment reads
+      - iplantcollaborative > example_data > HAMR_tutorial -> resolved_splice_alignments
 
-*Descriptive Steps*
+*RUN HAMR*
 
-.. 	#### Comment: Step title should be descriptive (i.e. Cleaning Read data) ###
+1. Click on "Apps" tab in the Discovery Environment and search for 'HAMR'.
 
+2. Under Inputs section, provide input BAM file and reference genome. Leave prediction model file as default. 
 
-1. Replace the text below with your own
+3. Provide an output file and output prefix in outputs section or leave it to defaults.
 
-2. Use the image src in this link to link to
+4. Under parameters, provide min read quality= 30, min read cov= 10, seq error rate= 0.05, Hypothesis= H4, Max p-val= 0.01, Max FDR= 0.05, Max ref prec= 0.05 or change as desired.
 
-   - A DE App: |CyVerse_launch|
-   - An Atmosphere image: |CyVerse_launch|
+5. Under optional parameters, indicate that the data is paired-end (pe) and filter-ends (fe). Filter-ends excludes the first and last positions in the read from the analysis. 
 
-3. Click :guilabel:`&Cancel` to continue is how you can show a button
-
-4. Tell the user to choose an appropriate value for a setting
-
-   .. admonition:: sample-data
-
-     Tell them if they are following with our sample data exactly
-     what value to choose
-
-
-..
-	#### Comment: Suggested style guide:
-	1. Steps begin with a verb or preposition: Click on... OR Under the "Results Menu"
-	2. Locations of files listed parenthetically, separated by carets, ultimate object in bold
-	(Username > analyses > *output*)
-	3. Buttons and/or keywords in bold: Click on **Apps** OR select **Arabidopsis**
-	4. Primary menu titles in double quotes: Under "Input" choose...
-	5. Secondary menu titles or headers in single quotes: For the 'Select Input' option choose...
-	####
 
 **Output/Results**
 
@@ -68,14 +46,9 @@ Running HAMR
     * - Output
       - Description
       - Example
-    * -
-      -
-      -
-
-
-----
-
-**Description of output and results**
+    * - HAMR 
+      - positions predicted to contain modified nucleotides
+      - iplantcollaborative > example_data > HAMR_tutorial -> HAMR_output
 
 
 ----

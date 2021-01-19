@@ -38,8 +38,6 @@ Preprocessing will assess the quality of the raw reads to identify possible sequ
 
 3. Click on the app icon.
 
-|fastqc_app_icon|_
-
 4. Change the name of the analysis and output folder as needed or leave for defaults.
 
 5. Under "Input" click on Add to provide input files. Sample dataset location iplantcollaborative > example_data > HAMR_tutorial -> fastqfiles. Check both files and click 'OK'. 
