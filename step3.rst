@@ -10,7 +10,7 @@
 Filter multi-mapping reads and add read groups
 -----------------------------------------------
 
-HAMR requires that reads map unambiguously to a reference sequence, in order to avoid false-positive mismatches. Workflow-extractUniqueReads, retains uniquely mapping reads and converts to the sorted BAM format.
+HAMR requires that reads map unambiguously to a reference sequence, in order to avoid false-positive mismatches. Workflow-extractUniqueReads, retains uniquely mapping reads and converts to the sorted BAM format. Next step- resolving spliced alignments using GATK requires assigning reads in a file to a read-group. Picard AddorReplaceGroups DE app will be used for assignment of reads.
 
 ----
 
@@ -22,41 +22,28 @@ HAMR requires that reads map unambiguously to a reference sequence, in order to 
     * - Input
       - Description
       - Example
-    * -
-      -
-      -
+    * - HISAT2 output file
+      - Alignment file in BAM format
+      - iplantcollaborative > example_data > HAMR_tutorial -> mapped_reads
 
-*Descriptive Steps*
-
-.. 	#### Comment: Step title should be descriptive (i.e. Cleaning Read data) ###
+**RUN Workflow-extractUniqueReads*
 
 
-1. Replace the text below with your own
+1. Click on "Apps" tab in the Discovery Environment and search for "Workflow-extractUniqueReads".
 
-2. Use the image src in this link to link to
+2. Click on the app icon and change the name of the analysis and output folder as desired.
 
-   - A DE App: |CyVerse_launch|
-   - An Atmosphere image: |CyVerse_launch|
+3. Under Step1- Samtools 1.11 BAM to SAM provide input BAM file from the data store. Example data for this step is provided at iplantcollaborative > example_data > HAMR_tutorial -> mapped_reads -> SRR7947123_1M_1.sorted.bam. In the next step, getuniquereads provide the output file name and click Launch Analysis.
 
-3. Click :guilabel:`&Cancel` to continue is how you can show a button
+**RUN Picard AddorReplaceReadGroups**
 
-4. Tell the user to choose an appropriate value for a setting
+1. Search for the app "Picard" in Apps search window.
 
-   .. admonition:: sample-data
+2. Click on the app icon 'Picard AddorReplaceReadGroups v2.5'.
 
-     Tell them if they are following with our sample data exactly
-     what value to choose
+3. Under the Inputs section provide the output from the Workflow-extractUniqueReads. Example data is provided at iplantcollaborative > example_data > HAMR_tutorial -> unique_mapping_reads -> output_sorted.bam. Provide Read group ID, library, platform, platform unit and sample name.
 
-
-..
-	#### Comment: Suggested style guide:
-	1. Steps begin with a verb or preposition: Click on... OR Under the "Results Menu"
-	2. Locations of files listed parenthetically, separated by carets, ultimate object in bold
-	(Username > analyses > *output*)
-	3. Buttons and/or keywords in bold: Click on **Apps** OR select **Arabidopsis**
-	4. Primary menu titles in double quotes: Under "Input" choose...
-	5. Secondary menu titles or headers in single quotes: For the 'Select Input' option choose...
-	####
+4. Under output section, provide the output file name and click Launch Analysis.
 
 **Output/Results**
 
@@ -66,14 +53,9 @@ HAMR requires that reads map unambiguously to a reference sequence, in order to 
     * - Output
       - Description
       - Example
-    * -
-      -
-      -
-
-
-----
-
-**Description of output and results**
+    * - 
+      - BAM file with assigned read groups
+      - iplantcollaborative > example_data > HAMR_tutorial -> unique_mapping_reads_assignRG -> output.RG.bam
 
 
 ----
