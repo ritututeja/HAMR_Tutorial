@@ -42,7 +42,7 @@ Preprocessing will assess the quality of the raw reads to identify possible sequ
 
 4. Change the name of the analysis and output folder as needed or leave for defaults.
 
-5. Under "Input" click on Add to provide input files for both ChIP and input dataset. Sample dataset location iplantcollaborative > example_data > HAMR_tutorial -> fastqfiles. Check both files and click 'OK'. 
+5. Under "Input" click on Add to provide input files. Sample dataset location iplantcollaborative > example_data > HAMR_tutorial -> fastqfiles. Check both files and click 'OK'. 
 
 6. For next section "Resource Requirements" request resources as needed or leave for defaults 
 
