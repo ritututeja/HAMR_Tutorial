@@ -26,7 +26,7 @@ HAMR requires that reads map unambiguously to a reference sequence, in order to 
       - Alignment file in BAM format
       - iplantcollaborative > example_data > HAMR_tutorial -> mapped_reads
 
-**RUN Workflow-extractUniqueReads*
+**RUN Workflow-extractUniqueReads**
 
 
 1. Click on "Apps" tab in the Discovery Environment and search for "Workflow-extractUniqueReads".
@@ -53,7 +53,7 @@ HAMR requires that reads map unambiguously to a reference sequence, in order to 
     * - Output
       - Description
       - Example
-    * - 
+    * - Assigned read groups
       - BAM file with assigned read groups
       - iplantcollaborative > example_data > HAMR_tutorial -> unique_mapping_reads_assignRG -> output.RG.bam
 
