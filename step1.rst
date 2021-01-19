@@ -25,7 +25,7 @@ In this tutorial, we are analyzing 1M reads from Arabidopsis thaliana leaf RNA-s
       - 1M reads dataset from SRR7947123
       - iplantcollaborative > example_data > HAMR_tutorial -> fastqfiles
 
-*Preprocessing*
+**Preprocessing**
 
 
 *Evaluate the quality of your sequencing data using FastQC*
@@ -34,7 +34,7 @@ Preprocessing will assess the quality of the raw reads to identify possible sequ
 
 1. Login to the |discovery_enviornment|.
 
-2. CLick on "Apps" tab in the Discovery Environment and search for "fastqc".
+2. Click on "Apps" tab in the Discovery Environment and search for "fastqc".
 
 3. Click on the app icon.
 

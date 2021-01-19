@@ -10,7 +10,7 @@
 **Read mapping**
 ------------------
 
-In this step, we will align our reads to the A. thaliana (TAIR10) reference genome. We will be using HiSAT2-index-align app from the Discovery Environment (DE). HISAT2 build and map app builds a HISAT2 index and then map the reads.
+In this step, we will align our reads to the A. thaliana (TAIR10) reference genome. We will be using HiSAT2-index-align app from the Discovery Environment (DE) that builds a HISAT2 index for your genome and then map the reads.
 
 ----
 

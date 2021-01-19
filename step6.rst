@@ -7,77 +7,14 @@
 `Learning Center Home <http://learning.cyverse.org/>`_
 
 
-Further reading
--------------
+**Further reading**
+------------------
 
-**Description:**
+1. Ryvkin P, Leung YY, Silverman IM, Childress M, Valladares O, Dragomir I, Gregory BD, Wang LS. HAMR: high-throughput annotation of modified ribonucleotides. RNA. 2013 Dec;19(12):1684-92. doi: 10.1261/rna.036806.112. Epub 2013 Oct 22. PMID: 24149843; PMCID: PMC3884653.
 
-..
-	#### Comment: short text description goes here ####
+2. Vandivier LE, Campos R, Kuksa PP, Silverman IM, Wang LS, Gregory BD. Chemical Modifications Mark Alternatively Spliced and Uncapped Messenger RNAs in Arabidopsis. Plant Cell. 2015 Nov;27(11):3024-37. doi: 10.1105/tpc.15.00591. Epub 2015 Nov 11. PMID: 26561561; PMCID: PMC4682304.
 
-----
-
-**Input Data:**
-
-.. list-table::
-    :header-rows: 1
-
-    * - Input
-      - Description
-      - Example
-    * -
-      -
-      -
-
-*Descriptive Steps*
-
-.. 	#### Comment: Step title should be descriptive (i.e. Cleaning Read data) ###
-
-
-1. Replace the text below with your own
-
-2. Use the image src in this link to link to
-
-   - A DE App: |CyVerse_launch|
-   - An Atmosphere image: |CyVerse_launch|
-
-3. Click :guilabel:`&Cancel` to continue is how you can show a button
-
-4. Tell the user to choose an appropriate value for a setting
-
-   .. admonition:: sample-data
-
-     Tell them if they are following with our sample data exactly
-     what value to choose
-
-
-..
-	#### Comment: Suggested style guide:
-	1. Steps begin with a verb or preposition: Click on... OR Under the "Results Menu"
-	2. Locations of files listed parenthetically, separated by carets, ultimate object in bold
-	(Username > analyses > *output*)
-	3. Buttons and/or keywords in bold: Click on **Apps** OR select **Arabidopsis**
-	4. Primary menu titles in double quotes: Under "Input" choose...
-	5. Secondary menu titles or headers in single quotes: For the 'Select Input' option choose...
-	####
-
-**Output/Results**
-
-.. list-table::
-    :header-rows: 1
-
-    * - Output
-      - Description
-      - Example
-    * -
-      -
-      -
-
-
-----
-
-**Description of output and results**
-
+3. https://github.com/GregoryLab/HAMR
 
 ----
 

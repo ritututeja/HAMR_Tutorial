@@ -89,10 +89,8 @@ Platform(s)
 
 Application(s) used
 ~~~~~~~~~~~~~~~~~~~
-..
-	#### Comment: these tables are examples, delete whatever is unnecessary ####
 
-**Discovery Environment App(s):**
+*Discovery Environment App(s):*
 
 .. list-table::
     :header-rows: 1
@@ -145,10 +143,10 @@ Input and example data
       - Format
       - Preparation/Notes
       - Example Data
-    * -
-      -
-      -
-      -
+    * - Input data for all the steps are provided with the example dataset
+      - Fastq files
+      - HAMR requires sorted, indexed, filtered for uniquely mapped and resolved for spliced alignment reads
+      - iplantcollaborative > example_data > HAMR_tutorial
 
 ----
 

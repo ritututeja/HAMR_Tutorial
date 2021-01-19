@@ -10,7 +10,7 @@
 Filter multi-mapping reads and add read groups
 -----------------------------------------------
 
-HAMR requires that reads map unambiguously to a reference sequence, in order to avoid false-positive mismatches. Workflow-extractUniqueReads, retains uniquely mapping reads and converts to the sorted BAM format. Next step- resolving spliced alignments using GATK requires assigning reads in a file to a read-group. Picard AddorReplaceGroups DE app will be used for assignment of reads.
+HAMR requires that reads map unambiguously to a reference sequence, in order to avoid false-positive mismatches. Workflow-extractUniqueReads, retains uniquely mapping reads and converts to the sorted BAM format. Next step *resolving spliced alignments using GATK* requires assigning reads in a file to a read-group. Picard AddorReplaceGroups DE app will be used for assignment of read-group.
 
 ----
 
