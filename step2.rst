@@ -10,7 +10,7 @@
 **Read mapping**
 ------------------
 
-In this step, we will align our reads to the A. thaliana (TAIR10) reference genome. We will be using HiSAT2-index-align app from the Discovery Environment (DE).
+In this step, we will align our reads to the A. thaliana (TAIR10) reference genome. We will be using HiSAT2-index-align app from the Discovery Environment (DE). HISAT2 build and map app builds a HISAT2 index and then map the reads.
 
 ----
 
@@ -29,27 +29,18 @@ In this step, we will align our reads to the A. thaliana (TAIR10) reference geno
       - A. thaliana TAIR 10 assembly
       - iplantcollaborative > example_data > HAMR_tutorial -> reference_genome
 
-*Descriptive Steps*
+**Run HISAT2 in the CyVerse Discovery Environment**
 
-.. 	#### Comment: Step title should be descriptive (i.e. Cleaning Read data) ###
+1. Click on "Apps" tab in the Discovery Environment and search for "hisat2".
 
+2. Click on the app icon HISAT2-index-align-2.1. 
 
-1. Replace the text below with your own
+3. Change the name of the analysis and output folder as needed or leave for defaults.
 
-2. Use the image src in this link to link to
+4. Under Input section provide Reference genome file in Fasta format. Browse through the datastore and provide TAIR10_allchr.fasta reference genome. This file is provided with the sample dataset- iplantcollaborative > example_data > HAMR_tutorial -> reference_genome.
 
-   - A DE App: |CyVerse_launch|
-   - An Atmosphere image: |CyVerse_launch|
+5. Provide FASTQ files from the path iplantcollaborative > example_data > HAMR_tutorial -> fastqfiles. Choose the File type as PE for this dataset and click launch analysis.
 
-3. Click :guilabel:`&Cancel` to continue is how you can show a button
-
-4. Tell the user to choose an appropriate value for a setting
-
-   .. admonition:: sample-data
-
-     Tell them if they are following with our sample data exactly
-     what value to choose
-     
 
 **Output/Results**
 
@@ -59,15 +50,9 @@ In this step, we will align our reads to the A. thaliana (TAIR10) reference geno
     * - Output
       - Description
       - Example
-    * -
-      -
-      -
-
-
-----
-
-**Description of output and results**
-
+    * - Alignment files
+      - Alignment files in BAM format
+      - SRR7947123_1M.sorted.bam
 
 ----
 

@@ -7,7 +7,7 @@
 `Learning Center Home <http://learning.cyverse.org/>`_
 
 
-Section Name
+Further reading
 -------------
 
 **Description:**

@@ -7,7 +7,7 @@
 `Learning Center Home <http://learning.cyverse.org/>`_
 
 
-Section Name
+Filter multi-mapping reads and add read groups
 -------------
 
 **Description:**
